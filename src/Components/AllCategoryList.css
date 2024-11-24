@@ -1,0 +1,11 @@
+.category-btn{
+    background-color: #5e9400;
+    border: none;
+    border-radius: 5px;
+}
+.category-btn:hover{
+    background-color: #476712a4;
+}
+.category-btn:active{
+    background-color: #d0f596a4;
+}

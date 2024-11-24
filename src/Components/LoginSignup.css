@@ -1,0 +1,101 @@
+.loginSignup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* Transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(8px); /* Adds a blur effect */
+  }
+  
+  /* Main container with white background and rounded corners */
+  .loginSignup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: fade-in 0.5s forwards, slide-down 0.5s forwards;
+  }
+  
+  /* Smooth fade-in and slide-down animations */
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-down {
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Form styles */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #218838;
+  }
+  
+  /* Toggle form link */
+  .toggle-form {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .toggle-form:hover {
+    color: #0056b3;
+  }
+  .loginSignup-title{
+    position: relative;
+  }
+  .close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
